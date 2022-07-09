@@ -368,7 +368,7 @@ nav {
 }
 .load-more-btn {
   display: flex;
-  margin: auto;
+  margin: 20px auto 0px auto;
   cursor: pointer;
   padding: 5px;
   border: 1px solid #9a9a9a;

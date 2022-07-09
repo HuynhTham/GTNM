@@ -3,7 +3,7 @@
 
 @media (max-width: 739px) { 
 
-    .left-sidebar, .right-sidebar, .post-row .post-profile-icon, .nav-right .seach-box, .nav-right .nav-user-icon, .nav-left ul{
+    .left-sidebar, .right-sidebar, .nav-right .seach-box, .nav-right .nav-user-icon, .nav-left ul{
         display: none;
     } 
 
@@ -48,7 +48,7 @@
     }
 
     .story-gallery {
-        margin: 0 5px;
+        margin: 5px;
     }
 
     .nav-overlay {
@@ -71,116 +71,79 @@
         transform: translateX(0%);
         opacity: 1;
     }
+
+    .dialog-body {
+        width: 350px;   
+    }
+
+    #dialog-input {
+        width: 100%;
+    }
+
+    #post-btn {
+        width: 320px;
+    }
+
+    .see-more {
+        left: 150px;
+    }
+
+    .load-more-btn {
+        margin-top: 16px;
+    }
 } 
 
 @media only screen and (min-width: 740px) and (max-width: 1023px)
-{ 
-   .nav-left{
-    width: 100%;
-    position: relative;
-
-   }
-   .icon-all-left{
-    position: absolute;
-    margin-left: 50px!important;
-
-   }
-   #id-fa-icon{
-    width: 250%;
-margin-left: 150%;
-   }
-
-   #id-fa-icon i{
-    /* margin-right: 10%; */
-    margin: 0 10%;
-
-   }
-   .nav-right{
-    width: 40%;
-    /* margin-left: 20%; */
-    position: relative;
-    line-height: 1px;
-    height: 30px;
-   }
-   .seach-box{
-    position: absolute;
-    width: 80%;
-    /* margin-left: 100px; */
-
-   }
-   .logo{
-    margin-left: -5%;
-    margin-right: 0;
-   }
-   .nav-user-icon{
-    position: absolute;
-    margin-left: 95%;
-   }
-   .main-content{
-    flex-basis:0;
-
-    width: 90%;
-    
-   }
-   .load-more-btn{
-    margin-top: 5%;
-   }
-    /* .nav-all{
-        width: 150%;
-
-        padding: 5px 0px;
-        background: #1876f2;
-        margin-right: -350px;
-    }
-    .nav-user-icon {
-        background: #1876f2;
-        margin-left: -150px;
-
-
-    }
-    .fa-bell{
-        margin-right: -250px;
-        margin-left: 100px;
-
-    }
-  .container{
-     width: 145%;
-     }
-   .fa-envelope{
-    margin-right: 80px;
-     }
-    .nav-right{
-        background: #1876f2;
-     }
-    .seach-box{
+{  
+    .nav-left{
         width: 100%;
-        margin-left: -100px;
-        margin-right: 200px;
-     }
-
+        position: relative;
     
-     .main-content{
-        flex-basis: 100%;
-        margin-right: 10px;
-        margin-left: 10px;
-
-      }
-      .fa-icon-nav{
-        width: 110%;
-      }
-    .right-sidebar{
-        margin-right: -80px;
-    }
-    #my-dialog {
-position: relative;
-    }
-    .dialog-body{
+       }
+       .icon-all-left{
         position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-50%,-50%);
-    } */
+        margin-left: 50px!important;
+    
+       }
+       #id-fa-icon{
+        width: 250%;
+    margin-left: 150%;
+       }
+    
+       #id-fa-icon i{
+        /* margin-right: 10%; */
+        margin: 0 10%;
+    
+       }
+       .nav-right{
+        width: 40%;
+        /* margin-left: 20%; */
+        position: relative;
+        line-height: 1px;
+        height: 30px;
+       }
+       .seach-box{
+        position: absolute;
+        width: 80%;
+        /* margin-left: 100px; */
+    
+       }
+       .logo{
+        margin-left: -5%;
+        margin-right: 0;
+       }
+       .nav-user-icon{
+        position: absolute;
+        margin-left: 95%;
+       }
+       .main-content{
+        flex-basis:0;
+    
+        width: 90%;
+        
+       }
+       .load-more-btn{
+        margin-top: 5%;
+       }
 
 }
-    
-

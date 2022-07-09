@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="styleDangki.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="dangKi.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <div class="left">
+                <h1>Đăng kí</h1>
+                <div class="name item-left">
+                    <i class="fas fa-user iname"></i>
+                <input type="text" placeholder="Tên của bạn" id="name" onblur="">
+                </div>
+                <div class="email item-left">
+                    <i class="fas fa-envelope iemail"></i>
+                    <input type="text" placeholder="Email" id="email" onblur="">
+                </div>
+                <div class="pword item-left">
+                    <i class="fas fa-lock ipword"></i>
+                    <input type="password" placeholder="Mật khẩu" id="pword" onblur="">
+                </div>
+                <div class="pword-check item-left">
+                    <i class="fas fa-key ipword-check"></i>
+                    <input type="password" placeholder="Nhập lại mật khẩu" id="pword-check" onblur="">
+                </div>
+                <div class="check item-left">
+                    <input class="check-box" type="checkbox">
+                    <span class="dieu-khoan">Tôi đồng ý <a href="#">với các điều khoản trên</a></span>
+                </div>
+                <button class="btn item-left" onclick="">Đăng kí</button>
+            </div>
+            <div class="right">
+                <img class="image" src="images/logoLight.png" alt="">
+                <a class="have-account" href="">Tôi đã có tài khoản rồi</a>
+            </div>
+        </div>
+        <p class="result"></p>
+    </div>
+    
+</body>
+</html>
