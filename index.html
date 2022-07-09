@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock Lock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style2.css">
+</head>   
+<body>
+    
+    <nav class="nav-all" >
+        <div class="nav-left"> 
+            <img src="images\logo.png" class="logo">
+            <div class="icon-all-left">
+                <ul id="id-fa-icon" class="fa-icon-nav">
+                    <i class="far fa-bell nav-icon"></i>
+                    <i class="far fa-envelope nav-icon"></i>
+                    <i class="fas fa-tv"></i>
+    
+                </ul>
+            </div>
+            
+        </div>
+        <div class="nav-right"> 
+            <div class="seach-box">
+                <img  src="images\search.png" >
+                <input type="text" placeholder="Tìm kiếm">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="images\PhungAvt.jpg" >
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+    <!----------- left-side ----------->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <!-- <a href="#"><img src="images\news.png" >Mới nhất</a> -->
+               <a href="#"><i class="far fa-clock  left-nav-icon"></i>Mới nhất</a>
+               <a href="#"><i class="fas fa-user-friends"></i>Bạn bè</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i>Marketplace</a>
+                <a href="#"> <i class="fas fa-tv"></i>Watch</a>
+                <a href="#">Xem thêm</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Lối tắt của bạn</p>
+                <a href="#"><img src="images\J2Team.png" >J2 Team Community</a>
+                <a href="#"><img src="images\LTWeb.png" >Học lập trình web</a>
+                <a href="#"><img src="images\GTNM.png" >Giao tiếp người máy thầy Toàn</a>
+                <a href="#"><img src="images\TuHocLapTrinh.jpg" >Tự học lập trình</a>
+            </div>
+        </div>
+        <!----------- main-content ----------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images\upload.png" >
+                    <p>Tạo tin</p>
+                </div>
+                <div class="story story2">
+                        <img src="images\HanhAvt.png" >
+                        <p>Mỹ Hạnh</p>
+                </div> 
+                <div class="story story3">
+                        <img src="images\BaoAvt.jpg" >
+                        <p>Gia Bảo</p>
+                 </div>       
+                 <div class="story story4">
+                        <img src="images\ThamAvt.jpg" >
+                        <p>Thắm Huỳnh</p>
+                 </div>   
+                <div class="story story5">
+                        <img src="images\LuuAvt.jpg" >
+                        <p>Đình Lưu</p>
+                 </div>           
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images\PhungAvt.jpg" id="img-user">
+                    <div>
+                        <p>Thanh Phụng</p>
+                        <small>Công khai</small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <div class="input-status" onclick="showDialog('my-dialog')" ><textarea class="input-status" rows="3" placeholder="Phụng ơi, bạn đang nghĩ gì thế?" disabled ></textarea></div>
+                    <div class="add-post-links">
+                        <a href="#"><i class="fas fa-video status-icon"></i>Trực tiếp</a>
+                        <a href="#"><i class="fas fa-camera status-icon"></i>Ảnh/Video</a>
+                        <a href="#"><i class="far fa-smile-beam status-icon"></i>Cảm xúc/Hoạt động</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog overlay" id="my-dialog">
+                <a onclick="hideDialog('my-dialog')" class="overlay-close"></a>
+                <div class="dialog-body">
+                    <a class="dialog-close-btn" onclick="hideDialog('my-dialog')">&times;</a>
+                    <span class="header-dialog" >Tạo bài viết</span>
+    
+                    <div class="dialog-content">
+                        <textarea id="dialog-input" cols="60" rows="5" placeholder="Bạn đang nghĩ gì?"></textarea>
+                        <img id="show-img">
+                      </div>
+                    <div class="dialog-choosen">
+                        <div><i class="fas fa-user-friends icon-input "></i></div>
+                        <div><i class="far fa-smile-beam icon-input"></i></div>
+                        <label >
+                          <i class="far fa-images icon-input icon-input-img"></i> 
+                          <input type="file" id="input-img" accept=".jpg, .jpeg, .png" onchange="imageFileAsURL()">
+                        </label>
+                    </div>
+                    
+                    <div class="close-btn" id="post-btn" onclick="add()">Đăng</div>
+                </div>
+            </div>
+            
+            <ul id="list-post">
+    
+            </ul>
+
+            <button type="button" class="load-more-btn">Tải thêm</button>
+
+        </div>
+
+        
+        <!----------- right-sidebar----------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Sự kiện</h4>
+                <a href="#">Xem tất cả</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>26</h3>
+                    <span>Tháng 3</span>
+                </div>
+                <div class="right-event">
+                    <h4>Học cảm tình đoàn</h4>
+                    <p>Đại học Nông Lâm</p>
+                    <a href="#">Thêm</a>
+                </div>
+            </div> 
+            <div class="event">
+                <div class="left-event">
+                    <h3>10</h3>
+                    <span>Tháng 7</span>
+                </div>
+                <div class="right-event">
+                    <h4>Công dân toàn cầu - công dân vũ trụ</h4>
+                    <p>Phan Văn Trường</p>
+                    <a href="#">Thêm</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Quảng cáo</h4>
+                <a href="#">Đóng</a>
+            </div>
+            <img src="images\omo.jpg" class="sidebar-ads"> 
+            
+            <div class="sidebar-title">
+                <h4>Người liên hệ</h4>
+                <a href="#">Ẩn</a>
+            </div>
+
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\HanhAvt.png" >
+                </div>
+                <p>Mỹ Hạnh</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\BaoAvt.jpg" >
+                </div>
+                <p>Gia Bảo</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\ThamAvt.jpg" >
+                </div>
+                <p>Thắm Huỳnh</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images\LuuAvt.jpg" >
+                </div>
+                <p>Đình Lưu</p>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

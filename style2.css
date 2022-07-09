@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.ellipsis {
+  position: relative;
+  top: 2px;
+  right: 6px;
+  cursor: pointer;
+}
+.see-more {
+  position: absolute;
+  background-color: #fff;
+  width: 200px;
+  height: 100px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  /* visibility: hidden; */
+  display: none;
+}
+#delete-btn {
+  margin-top: 22px;
+}
+.see-more-btn {
+  /* padding-top: ; */
+  padding: 5px 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+  height: 30px;
+  background-color: white;
+  border-radius: 4px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  left: -179px;
+  cursor: pointer;
+}
+.see-more-btn:hover {
+  background-color: rgb(241, 241, 241);
+}
+#close-see-more {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
